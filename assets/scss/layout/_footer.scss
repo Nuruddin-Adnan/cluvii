@@ -1,0 +1,62 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.footer {
+    background: variables.$color-blue url(../images/footer-bg.png) no-repeat center center/cover;
+    .footer-top {
+        padding: 90px 0;
+
+        @media (max-width: 575px) {
+            padding: 60px 0;
+        }
+        
+
+        .footer-link-heading {
+            @include mixins.font-style(18px, 700, variables.$color-white);
+            margin-bottom: 20px;
+        }
+
+        ul{
+            padding-left: 0;
+            li {
+                padding-bottom: 15px;
+                &:last-child{
+                    padding-bottom: 0;
+                }
+                a {
+                    font-size: 16px;
+                    color: variables.$color-white;
+                    display: inline-block;
+                    position: relative;
+                   
+                    &::before {
+                        content: "";
+                        width: 0%;
+                        height: 1px;
+                        background-color: variables.$color-white;
+                        position: absolute;
+                        top: 100%;
+                        left: 10px;
+                        transition: all 0.2s linear;
+                    }
+                    &:hover {
+                        &::before {
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        background-color: #00427f;
+
+        .footer-copyright {
+            font-size: 12px;
+            color: variables.$color-white;
+            padding: 15px;
+            text-align: center;
+        }
+    }
+}

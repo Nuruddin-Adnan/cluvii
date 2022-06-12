@@ -1,0 +1,11 @@
+@use '../abstracts/variables';
+
+.bg-blue {
+    background-color: variables.$color-blue;
+}
+
+.container-xl-1170{
+    @media (min-width: 1200px) {
+        max-width: 1170px !important;
+    }
+}

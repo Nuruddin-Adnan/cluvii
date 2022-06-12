@@ -1,0 +1,56 @@
+@use '../abstracts/variables';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  color: variables.$color-black;
+}
+
+.text-blue{
+  color: variables.$color-blue;
+}
+
+.text-whte{
+  color: variables.$color-white;
+}
+
+.text-black{
+  color: variables.$color-black;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.heading-1{
+  font-size: 51px;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
+}
+.heading-2{
+  font-size: 45px;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: 35px;
+  }
+}
+.heading-3{
+  font-size: 35px;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: 30px;
+  }
+}
+.heading-4{
+  font-size: 28px;
+  font-weight: 700;
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+}

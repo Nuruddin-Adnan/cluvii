@@ -1,0 +1,34 @@
+@use '../abstracts/variables';
+
+.header {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .nav-link {
+            font-size: 12px;
+            color: #cdcdcd;
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            background-color: rgba(variables.$color-white, 0.1);
+            line-height: 25px;
+            padding: 0;
+            text-align: center;
+            margin-left: 20px;
+            display: block;
+
+            &:hover {
+                color: variables.$color-white;
+                background-color: rgba(variables.$color-white, 0.2);
+            }
+        }
+    }
+
+    .logo {
+        padding: 25px;
+        text-align: center;
+        img {
+            max-width: 225px;
+        }
+    }
+}

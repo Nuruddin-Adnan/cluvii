@@ -1,0 +1,23 @@
+.article {
+    padding: 150px 0;
+    background: url(../images/article/article-bg.png) no-repeat center center/contain;
+
+    .bg-light-wavy {
+        width: 100%;
+        background: url(../images/article/light-wavy-shaped.png) no-repeat center center/cover;
+        padding: 130px 0;
+
+        @media (max-width: 767px) {
+            padding: 70px 0;
+        }
+    }
+
+    article {
+        img {
+            @media (max-width: 767px) {
+                max-width: 70%
+            }
+        }
+    }
+
+}
