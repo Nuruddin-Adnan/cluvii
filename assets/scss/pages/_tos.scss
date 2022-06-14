@@ -1,0 +1,135 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+
+.tos {
+    background: url(../images/tos-bg.png) no-repeat center center/cover;
+    
+    .tos-card {
+        background-color: variables.$color-white;
+        border-radius: 20px;
+        padding: 1.5rem;
+        margin: 1rem 0 3rem 0;
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
+
+        .agreement-title {
+            color: #b0b0b0;
+            font-size: 25px;
+            padding-top: 10px;
+            @media (min-width: 768px) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+
+        .main-title {
+            @include mixins.font-style(50px, 700, variables.$color-black);
+            margin: 5px 0 20px 0;
+            @media (min-width: 768px) {
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            @media (max-width: 767px) {
+                font-size: 35px;
+            }
+        }
+    }
+
+    .tos-content {
+        padding-left: 0;
+        // height: 60vh;
+        overflow: auto;
+        @media (min-width: 768px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @media (max-width: 767px) {
+            margin-right: -1rem;
+        }
+
+        > li {
+            list-style-type: numeric;
+            list-style-position: inside;
+            margin-bottom: 15px;
+            &::marker {
+                @include mixins.font-style(26px, 700, variables.$color-black);
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                li {
+                    list-style-type: disc;
+                }
+            }
+
+            ol.list-style-lower-alpha {
+                li{
+                    list-style-type: lower-alpha;
+                }
+            }
+
+            ol.list-style-numeric {
+                li{
+                    list-style-type: numeric;
+                }
+            }
+        }
+
+        &.list-style-none{
+            >  li {
+                list-style-type: none;
+            }
+        }
+
+        p {
+            @media (max-width: 767px) {
+                font-size: 16px;
+            }
+        }
+
+        .tos-title {
+            @include mixins.font-style(26px, 700, variables.$color-black);
+            display: inline-block;
+            margin: 15px 0;
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
+        }
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 15px;
+            @media (max-width: 767px) {
+                width: 5px;
+            }
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: #ececec;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: variables.$color-blue; 
+            border-radius: 10px;
+        }
+    }
+
+    .tos-footer {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        @media (min-width: 768px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}

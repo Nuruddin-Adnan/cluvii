@@ -11,6 +11,7 @@
 
 
 /*=== components css start === */
+@use 'components/buttons';
 @use 'components/article';
 @use 'components/about-us';
 @use 'components/how-its-work';
@@ -26,4 +27,5 @@
 
 /*=== pages start === */
 @use  'pages/error_404';
+@use  'pages/tos';
 /*===// end of pages  === */
