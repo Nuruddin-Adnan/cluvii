@@ -196,6 +196,38 @@ body {
   line-height: 28px;
 }
 
+.ready-to {
+  text-align: center;
+  padding: 80px 0;
+}
+.ready-to .join-discord {
+  padding: 30px 40px;
+  background-color: #01529e;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .ready-to .join-discord {
+    white-space: nowrap;
+  }
+}
+@media (max-width: 767px) {
+  .ready-to .join-discord {
+    padding: 20px;
+    width: 70%;
+  }
+  .ready-to .join-discord .heading-3 {
+    font-size: 25px;
+  }
+}
+.ready-to .join-discord .btn {
+  font-size: 25px;
+  font-weight: 700;
+  color: #01529e;
+  border-radius: 10px;
+}
+
 .header .navbar {
   padding-top: 10px;
   padding-bottom: 10px;

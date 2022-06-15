@@ -1,0 +1,32 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.ready-to{
+    text-align: center;
+    padding: 80px 0;
+
+    .join-discord {
+        padding: 30px 40px;
+        background-color: rgba(variables.$color-blue, 1);
+        border-radius: 20px;
+        text-align: center;
+        display: inline-block;
+
+        @media (min-width: 768px) {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 767px) {
+            padding: 20px;
+            width: 70%;
+            .heading-3 {
+                font-size: 25px;
+            }
+        }
+
+        .btn {
+            @include mixins.font-style(25px, 700, variables.$color-blue);
+            border-radius: 10px;
+        }
+    }
+}
