@@ -416,6 +416,7 @@ body {
 }
 .tos .tos-content {
   padding-left: 0;
+  height: 60vh;
   overflow: auto;
   /* width */
   /* Track */
@@ -463,6 +464,9 @@ body {
   .tos .tos-content p {
     font-size: 16px;
   }
+}
+.tos .tos-content a:hover {
+  text-decoration: underline;
 }
 .tos .tos-content .tos-title {
   font-size: 26px;
