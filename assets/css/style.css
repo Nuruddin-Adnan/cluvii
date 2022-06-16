@@ -215,7 +215,7 @@ body {
 @media (max-width: 767px) {
   .ready-to .join-discord {
     padding: 20px;
-    width: 70%;
+    width: 80%;
   }
   .ready-to .join-discord .heading-3 {
     font-size: 25px;
@@ -226,6 +226,10 @@ body {
   font-weight: 700;
   color: #01529e;
   border-radius: 10px;
+}
+.ready-to .join-discord .btn:hover {
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .header .navbar {
@@ -314,7 +318,7 @@ body {
 @media (max-width: 767px) {
   .banner .join-discord {
     padding: 20px;
-    width: 70%;
+    width: 80%;
   }
   .banner .join-discord .heading-3 {
     font-size: 25px;
@@ -325,6 +329,10 @@ body {
   font-weight: 700;
   color: #01529e;
   border-radius: 10px;
+}
+.banner .join-discord .btn:hover {
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .footer {

@@ -18,7 +18,7 @@
 
         @media (max-width: 767px) {
             padding: 20px;
-            width: 70%;
+            width: 80%;
             .heading-3 {
                 font-size: 25px;
             }
@@ -27,6 +27,11 @@
         .btn {
             @include mixins.font-style(25px, 700, variables.$color-blue);
             border-radius: 10px;
+
+            &:hover {
+                background-color: #fff;
+                box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+            }
         }
     }
 }
